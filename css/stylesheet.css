@@ -2,25 +2,9 @@ body {
     background-color: #fff /*#a2ded0;*/
 }
 
-.logo {
-    position: relative;
-    left: 8rem;
-    width: 35%;
-}
-
-.footer_logo {
-    margin-left: 12px;
-    width: 220px
-}
-
 .list-unstyled ul li {
     margin-left: 14px;
 }
-
-
-
-
-
 
 #navbarSupportedContent ul {
     font-size: 14.8px;
@@ -28,27 +12,39 @@ body {
     left: 68rem;
 }
 
+.fab{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 3rem;
+    z-index: 1;
+    color: black;
+
+}
+
+/*GLOBAL STYLES*/
+
+
 .jumbotron {
     background-image: url("./cover.jpg");
     background-repeat: no-repeat;   
     background-size: cover;
-    width: 100%;
     /*margin-top: -40px; */   
     /*background-attachment: fixed;*/
     background-attachment: relative;
     background-position: center 1px; /* I had to change the number for center -238px to 1px in order for the entire picture to appear*/
     height: 86vh;
     height: 46vw;
+    width: 100%;
 }
 
 .jumbotron h1  {
    /* position: relative;*/
     /*top: -18;*/
-    margin-top: 8rem;
-    left: 0;
-    padding-left: 20px;
     color: #f7fafe;
-   
+    left: 0;
+    margin-top: 8rem;
+    padding-left: 20px;
 }
 
 #introduction h1  {
@@ -62,30 +58,30 @@ body {
 
 .btn {
     /*border-radius: .45rem;*/
-    margin-top: -44rem;
+    position: absolute;
     background-color: #0c63ff;
     border-color: #0c63ff !important;
+    margin-right: 12rem;
+    margin-top: -84px;
     padding-left: 17px;
     padding-right: 17px;
     padding-top: 9px;
     padding-bottom: 9px;
-    
 }
 
 .section_one_title {
     position: relative;
-    left: 27rem;
-    top: 16;
-    padding-top: 31px;
+    margin-top: 19rem;
+    left: 27rem; 
 }
 
 h6 {
-    position: relative;
-    left: -13.4rem;
-    margin-top: 5rem;
-    font-style: italic;
     color: #87909e;
+    font-style: italic;
+    left: -13.4rem;
+    margin-top: 22rem;
     margin-bottom: 6rem;
+    position: relative;
 }
 
 .sub_title {
@@ -109,40 +105,39 @@ h6 {
 .container_features .row {
     padding-top: 43px;
     padding-bottom: 12rem;
-   
 }
 
 .container_features p {
     color: #87909e;
     font-family: 'font-family: Poppins';
-    text-align: center;
-
-    /*font-style: normal;*/
     font-size: 20px;
     font-weight: 400;
     line-height: 1.3; 
+    text-align: center;
+    /*font-style: normal;*/
 }
+
 button {
-    position: relative;
-    left: 12rem;
-
-    color: #fff;
     background-color: #0c63ff;
+    color: #fff;
+    position: relative;
+    left: 8rem;
    /* border-color: #0c63ff;*/ /*!important*/
-    
 }
 
+.btn-primary {
+    margin-right: 12rem;
+}
 
-
-
+.btn-primary:hover {
+    background-color: lightskyblue;
+}
 
 .meeting_info, .section_container {
     margin-bottom: 8rem;
     position: relative;
     left: 10rem;
 }
-
-
 
 .meeting_info {
     display: flex;
@@ -156,20 +151,19 @@ button {
 }
 
 .meeting_info p {
+    color: #87909e;
     font-size: 17px;
     padding-left: 15rem;
     text-align: justify;
     word-break: break-all;
     width: 120%;
-    color: #87909e;
 }
 
 .meeting_info, .section_container_two {
+    left: 2rem;
     margin-bottom: 5rem;
     position: relative;
-    left: 2rem;
 }
-
 
 .remote_info {
     display: flex;
@@ -179,77 +173,71 @@ button {
 
 .remote_info h3 {
     font-size: 1.6rem;
+    margin-top: -10rem;
     padding-left: 15rem;
     word-break: break-all;
     width: 125%;
-    margin-top: -10rem;
 }
 
 .remote_info p {
+    color: #87909e;
     font-size: 17px;
+    margin-bottom: 2.4rem;
     padding-left: 12rem;
+    text-align: right;
     text-align: justify;
     word-break: break-all;
     width: 114%;
-    margin-bottom: 2.4rem;
-    color: #87909e;
-    text-align: right;
 }
 
-
-
 .m-3 img {
-    margin-top: -14rem;
     margin-left: 10rem;
+    margin-top: -14rem;
 }
 
 .solution_section {
     position: relative;
-    top: 15;
     margin-top: -3rem;
+    top: 15;
 }
 
 .section_two_title {
    position: relative;
-   left: 39rem;
-   top: 15;
-   padding-top: 31px;
+   left: 39rem;   
    margin-bottom: 12px;
    margin-top: 10rem;
+   padding-top: 31px;
+   top: 15;
 }
 
 .small-header {
+   color: #87909e;
    margin-left: 51rem;
-    margin-top: -0.1rem;
-    color: #87909e;
-    margin-bottom: 10rem;
+   margin-bottom: 10rem;
+   margin-top: -0.1rem;
 }
-
-
 
 .video_background {
     background-image: url("/css/wallpaper.jpg");
-    margin: auto;
     background-size: cover;
+    margin: auto;
 }
 
 .video {
     position: relative;
     left: 25rem;
     margin-top: -7rem;
-    margin-bottom: 28rem;
+    margin-bottom: 16rem;
 }
 
 .profile_pic img {
     position: absolute;
-   margin-left: 38.6rem;
+    margin-left: 38.6rem;
     border-radius: 75px;
     margin-top: 11rem;
     z-index: 1;
     border: 3px solid #0c63ff;
 }
-
-
 
 .card {
     padding-top: 74px;
@@ -258,18 +246,17 @@ button {
 .testimony_section {
     display: flex;
     position: absolute;
-    right: 14;
     box-shadow: 5px 10px 18px #888888;
     margin-left: 37rem; /*IM NOT SURE IF THIS IS RIGHT EVEN THOUGH IT SEEM TO BE THE ONLY EFFECT TO CENTER THE CARD*/
-
+    right: 14;
 }
 
 .featured {
     display: flex;
     justify-content: center;
+    margin-bottom: 10rem;
     margin-left: 0.9rem;
     margin-top: 10rem;
-    margin-bottom: 10rem;
 }
 
 .john_epsey h4 {
@@ -284,31 +271,24 @@ button {
     padding-top: 4rem;
 }
 
-
-
 .button2 {
     position: absolute;
     border: 2px solid #fff;
-    width: 10%;
-    height: 4rem;
     color: #fff;
-
+    height: 4rem;
+    margin-left: 58rem;
+    margin-top: -6.6rem;
     top: -20;
-   
-      margin-left: 58rem;
-      margin-top: -6.6rem;
-    
-  }
+    width: 10%;
+}
   
-  .button2:hover {
-    background-color: yellow;
+.button2:hover {
+    background-color: lightskyblue;
     color: white;
-  }
-  
- 
+}
+   
 .more_info {
     display: flex;
-
     justify-content: center;
     padding-top: 33rem;
 }
@@ -318,21 +298,19 @@ button {
 }
 
 .info_container h2 {
-    margin-top: 2rem;
     margin-bottom: 1.2rem;
+    margin-top: 2rem; 
 }
 
 .info_container {
     margin-bottom: 6rem;
 }
 
-
-
 .divider {
-display: flex;
-background-color: #0c63ff !important;
-color: #fff;
-height: 10rem;
+    display: flex;
+    color: #fff;
+    background-color: #0c63ff !important;
+    height: 10rem;
 }
 
 .divider_container {
@@ -341,8 +319,7 @@ height: 10rem;
 .display-4 {
     font-size: 23px;
     margin-left: 13rem;
-    margin-top: 3.3rem;
-    
+    margin-top: 3.3rem; 
 }
 
 .lead {
@@ -364,12 +341,11 @@ height: 10rem;
 }
 
 .order-button {
-  
+    margin: auto;
     margin-top: -15rem;
    /* margin-bottom: 34px;*/
-    margin: auto;
-    width: 25%;
     padding: 10px;
+    width: 25%;
 }
 
 .features {
@@ -377,15 +353,12 @@ height: 10rem;
 }
 
 .features p {
-    font-family: 'Muli' 'sans-serif';
-    text-align:center;
     color: #323232;
+    font-family: 'Muli' 'sans-serif';
     font-size: 1.2em;
     padding-top: 10px;
+    text-align:center;
 }
-
-
-
 
 
 /*THE ABOUT US PAGE*/
@@ -404,7 +377,7 @@ height: 10rem;
     position: relative;
     margin-left: 33rem;
     margin-top: 10rem;
-     font-weight: 700;
+    font-weight: 700;
 }
 
 .block_container p {
@@ -417,17 +390,15 @@ height: 10rem;
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
-    margin-top: 22rem;
     height: 84vh;
-   
+    margin-top: 22rem; 
 }
 
 .about_intro, .about_description {
-    margin-top: 17rem;
     margin-bottom: 5rem;
-    margin-left: 13rem;
+    margin-top: 17rem;
+    margin-left: 8rem;
 }
-
 
 .about_intro {
     font-size: 26px;
@@ -436,25 +407,20 @@ height: 10rem;
 }
 
 .about-section {
-    margin-left: 34rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    margin-left: 34rem;
 }
 
 a:link {
     font-weight: 800;
 }
 
-
-
 .footer-logo {
     position: absolute;
     margin-top: 15px;
 }
-
-
-
 
 .text-center_two {
     margin-top: 23px;
